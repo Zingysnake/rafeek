@@ -62,6 +62,6 @@ setTimeout(button, 3500);
 
 $(document).ready(function(){
     $('#start').click(function(){
-        window.location.href = "../rafeek/lost.html";
+        window.location.href = "https://zingysnake.github.io/rafeek/lost.html";
     })
 })
