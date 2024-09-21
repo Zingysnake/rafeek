@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lost.css">
+    <link rel="stylesheet" href="css/lost-query.css">
+    <script src="https://kit.fontawesome.com/18a336e4db.js" crossorigin="anonymous"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <link rel="icon" href="imgs/icon.png">
+    <title>Rafeek - Lost</title>
+</head>
+<body>
+    <div class="intro">
+        <div class="container first">
+            <h1 class="title">Lost ?</h1>
+            <p class="text">with <span class="name">Rafeek</span> no problem</p>
+        </div>
+    </div>
+    <div class="body">
+        <div class="container second">
+            <div class="form">
+                <div class="field mt-3 mb-3">
+                    <select class="form-select" aria-label="Default select example" id="source" style="padding: 20px !important; color: #8a8a8a; font-size: larger; width: 400px;">
+                        <option value="">where are you</option>
+                        <option value="1">Hadayek El Ahram</option>
+                        <option value="2">Dokki</option>
+                        <option value="3">Abaseya</option>
+                    </select>
+                </div>
+                <div class="field mt-3 mb-3">
+                    <select class="form-select" aria-label="Default select example" id="dest" style="padding: 20px !important; color: #8a8a8a; font-size: larger;  width: 400px;">
+                        <option value="">where are you going</option>
+                        <option value="1">Cairo Staduim</option>
+                        <option value="2">Great Cairo Library</option>
+                        <option value="3">Zamalek</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary" id="submit" style="width: 80px;">GO..</button>
+                <div class="alert alert-danger" id="warning" role="alert" style="margin-top: 30px; display: none;"></div>
+            </div>
+        </div>
+        <div class="modal" id="guide-modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Guide</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ul id="road"></ul>
+                  <div id="location" style="display: flex; justify-content: space-between !important;"></div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <a href="landing.html" id="home"><i class="fa-solid fa-house" style="margin-right: 5px;"></i> Home</a>
+    </div>
+    <script src="js/lost.js"></script>
+</body>
+</html>

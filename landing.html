@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/landing-query.css">
+    <script src="https://kit.fontawesome.com/18a336e4db.js" crossorigin="anonymous"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <link rel="icon" href="imgs/icon.png">
+    <title>Rafeek</title>
+</head>
+<body>
+    <div class="landing">
+        <div class="content">
+            <!-- <h1 id="header">Rafeek</h1> -->
+             <img src="imgs/logo.png" alt="" style="margin-bottom: 20px;" class="logo">
+            <p id="slogan"></p>
+            <button type="button" id="start" class="btn btn-primary"><i class="fa-solid fa-car-side" style="margin-right: 10px; font-size: 19px;"></i><span style="font-size: 20px;" class="start">Let's start</span></button>
+        </div>
+        <a href="contact.html" id="contact-us"><i class="fa-solid fa-headset" style="margin-right: 5px;"></i> Contact us</a>
+        <a href="about.html" id="about-us"><i class="fa-solid fa-circle-info" style="margin-right: 5px;"></i> About us</a>
+    </div>
+
+    <div class="modal" id="options-modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Features</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="display: flex; justify-content: space-around;">
+                <button type="button" class="btn btn-outline-primary" id="lost">Lost</button>
+                <button type="button" class="btn btn-outline-primary" id="sub">Subscriptions</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal" id="sub-modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Subscription</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="field mt-3 mb-3">
+                    <select class="form-select" aria-label="Default select example" id="subscription" style="padding: 20px !important; color: #8a8a8a; font-size: larger;  width: 400px;">
+                        <option value="0">Choose your subscription</option>
+                        <option value="1">100 LE</option>
+                        <option value="2">200 LE</option>
+                        <option value="3">300 LE</option>
+                    </select>
+                </div>
+                <div class="field mt-3 mb-3">
+                    <select class="form-select" aria-label="Default select example" id="payment" style="padding: 20px !important; color: #8a8a8a; font-size: larger;  width: 400px;">
+                        <option value="0">Choose the way of payment</option>
+                        <option value="1">Fawry</option>
+                        <option value="2">Visa</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary" id="done" style="width: 80px;">Done</button>
+                <div class="alert alert-success" role="alert" id="done-msg" style="display: none; margin-top: 30px;"></div>
+                <div class="alert alert-danger" id="alert-msg" role="alert" style="margin-top: 30px; display: none;"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="js/landing.js"></script>
+</body>
+</html>
