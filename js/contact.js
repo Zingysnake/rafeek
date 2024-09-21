@@ -23,5 +23,5 @@ $(document).ready(function(){
 })
 
 function move(){
-    window.location.href = "../landing.html";
+    window.location.href = "https://zingysnake.github.io/rafeek/landing.html";
 }
