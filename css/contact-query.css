@@ -1,0 +1,13 @@
+@media screen and (max-width: 480px) 
+{
+    .title
+    {
+        font-size: 56px;
+    }
+
+    .text
+    {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+}

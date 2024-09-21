@@ -1,0 +1,48 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) 
+{
+    .title
+    {
+        font-size: 100px;
+    }
+
+    .text
+    {
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    select.form-select
+    {
+        width: 320px !important;
+    }
+
+    iframe
+    {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    .gmap_canvas 
+    {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    #location
+    {
+        width: 100%;
+    }
+
+    #media
+    {
+        display: none;
+    }
+
+}
