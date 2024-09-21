@@ -71,7 +71,7 @@ $(document).ready(function(){
     })
 
     $("#lost").click(function(){
-        window.location.href = '../lost.html';
+        window.location.href = 'https://zingysnake.github.io/rafeek/lost.html';
     })
 
     $("#sub").click(function(){
